@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&display=swap");
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  font-family: "Concert One", cursive;
+}
+body {
+  background-color: #158467;
+  color: white;
+  margin: 0px;
+  text-align: center;
+}
+h1 {
+  font-size: 45px;
+  margin: 8rem auto 4rem;
+}
+
+input {
+  display: block;
+  margin: 2rem auto;
+  width: 60%;
+  height: 10vh;
+  opacity: 0.5;
+  border-radius: 10px;
+}
+
+button {
+  font-family: "Concert One", cursive;
+
+  background-color: #3b5249;
+  color: white;
+  padding: 1% 2%;
+  border-radius: 20px;
+  border-style: none;
+}
+
+.stringDiv {
+  width: 80%;
+  margin: 1rem;
+  font-size: 25px;
+}
+
+.varifyDiv {
+  width: 80%;
+  margin: 1rem;
+  font-size: 25px;
+}
+
+footer {
+  font-family: "Courgette", cursive;
+  margin-top: 8.5rem;
+  background-color: #206a5d;
+  padding: 20px 40px;
+}
+
+footer .about {
+  font-size: 20px;
+}
+footer a {
+  text-decoration: none;
+  color: #382933;
+}
