@@ -3,15 +3,16 @@ import "./styles.css";
 import { useState } from "react";
 
 export default function App() {
-  var [string, setString] = useState("");
-  var [stringChecker, setStringChecker] = useState("");
-  var [varify, setVarify] = useState("");
+  let [string, setString] = useState("");
+  let [stringChecker, setStringChecker] = useState("");
+  let [varify, setVarify] = useState("");
 
-  function inputHandler(event) {
+  const inputHandler = (event) => {
     string = event.target.value;
     stringChecker = event.target.value;
-  }
-  function clickHandler() {
+  };
+
+  const clickHandler = () => {
     setString(string);
     setStringChecker(stringChecker);
 
@@ -25,7 +26,7 @@ export default function App() {
         setVarify("not a palindrome");
       }
     }
-  }
+  };
 
   return (
     <div className="App">
@@ -34,7 +35,7 @@ export default function App() {
         onChange={inputHandler}
         placeholder="Enter number to check palindrome"
       />
-      <button onClick={clickHandler}>Check</button>
+      <button onClick={() => clickHandler()}>Check</button>
       <div className="stringDiv">{string}</div>
       <div className="varifyDiv">{varify}</div>
 
